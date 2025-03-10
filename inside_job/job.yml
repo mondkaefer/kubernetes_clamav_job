@@ -1,0 +1,13 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: clamav-inside-job
+spec:
+  template:
+    spec:
+      serviceAccountName: clamav-launcher
+      restartPolicy: OnFailure
+      containers:
+        - name: clamav-inside-job
+          image: 192.168.64.1:5000/sre/clamav_inside_job
+
