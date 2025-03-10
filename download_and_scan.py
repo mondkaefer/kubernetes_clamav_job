@@ -23,7 +23,7 @@ while True:
     print(e)
 
 try:
-  with open('./download_and_scan.py', "rb") as fh:
+  with open('download_and_scan.py', "rb") as fh:
     print('scanning file...')
     buf = BytesIO(fh.read())
     scan_result = cd.instream(buf)
