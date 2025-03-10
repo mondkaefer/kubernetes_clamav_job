@@ -1,3 +1,7 @@
+> [!CAUTION]
+> This is a repo to explore a feature, not code ready to use anywhere.
+
+
 Launch a clamav scan as a job in kubernetes, both from python code outside of kubernetes and from python code from job/pod inside kubernetes
 
 ## Misc
